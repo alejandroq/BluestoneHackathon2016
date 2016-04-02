@@ -1,6 +1,6 @@
 //variables 
-@headerColor:#cccccc;
-@backgroundColor: #F5F5F5;
+@headerColor:#ccccc0;
+@backgroundColor: #f2ffff;
 
 //mixins
 .transition(@transition) {
@@ -80,6 +80,7 @@ article {
 .file_manager{
   margin-left: 2%;
   margin-right: 2%;
+  height: 20em;
 }
 .file_manager_title{
   width:100%;
@@ -99,7 +100,7 @@ article {
 .notepad{
   margin-left: 2%;
   margin-right: 2%;
-  height: 15em;
+  height: 25em;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -118,28 +119,38 @@ article {
 .reminder{
   margin-left: 2%;
   margin-right: 2%;
-  height: 15em;
+  height: 25em;
   overflow: scroll;
   overflow-x: hidden;
 }
 .chat{
   margin-left: 2%;
   margin-right: 2%;
-  height: 30em;
+  height: 25em;
   overflow: scroll;
   overflow-x: hidden;
 }
-
 .chat_title{
   text-align: center;
 }
-
 .chat_log{
   margin-top:-15px;
 }
 .chat_text{
   text-align: center;
 }
+
+.admin{
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 25em;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.admin_title, .admin_table{
+  text-align: center;
+}
+
 .reminder_title{
   text-align: center;
 }
@@ -198,6 +209,10 @@ span.glyphicon-folder-close, span.glyphicon-file{
 footer{
   font-size:.6em;
   color: black !important;
+}
+
+.bot_bar{
+  background-color: @headerColor !important;
 }
 
 .work_status_bar{
