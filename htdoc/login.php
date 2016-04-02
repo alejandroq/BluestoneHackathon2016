@@ -1,3 +1,7 @@
+<?php 
+//Start the Session
+session_start();
+?>
 <!DOCTYPE html>
 
 <html class="no-js" lang="">
@@ -29,7 +33,14 @@
 	<body>
 		<!-- HEADER -->
 		<header class="container-fluid">
-			<h1 id="branding_logo" class="fa fa-coffee col-md-6 logo">&nbsp;Coffee</h1>
+			<h1 id="branding_logo" class="fa fa-coffee col-md-6 logo">&nbsp;Coffee 
+				<?php 
+				if(isset($_SESSION['user_FirstName']))
+					{
+						echo 'welcomes you, ' . $_SESSION['user_FirstName'] . '.';
+					} 
+				?>
+			</h1>
 			<nav>
 				<li><i class="fa fa-home"><p>Home</p></i></li>
 				<li><i class="fa fa-envelope-o"><p>Email</p></i></li>
