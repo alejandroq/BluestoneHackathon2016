@@ -2,7 +2,7 @@
 
 include '../connection.php';
 
-$sql = "SELECT * FROM Event WHERE event_Begins >= CURDATE() ORDER BY event_Begins ASC LIMIT 3";
+$sql = "SELECT * FROM Event WHERE event_Begins >= 2016-2-31 ORDER BY event_Begins ASC LIMIT 3";
 $result = $mysqli->query($sql);
 if ($result->num_rows > 0)
 {
