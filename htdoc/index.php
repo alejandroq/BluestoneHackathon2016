@@ -214,21 +214,73 @@
 		<!-- END SECOND TWO FUNCTIONS -->
 
 		<!-- THIRD TWO FUCNCTIONS -->
-		<!--
+		
 		<div class="col-md-6" id = "chat_view">
 			<div class="panel panel-default chat">
-		    	<div class="panel-heading">
-		    		<div class = "chat_title">
-		    			Chat
-		    		</div>
-		    		<div class = "close" id = "reminder_close">
+		      	<div class="panel-heading">
+		      		<div class = "chat_title">
+		      			Chat : John Smith
+		      			<div class = "close" id = "chat_close">
 			    		x
-			    	</div>
-		      	<div class="panel-body">Panel Content</div>
+			    		</div>
+		      		</div>
+		      	</div>
+		      	<div class="panel-body chat_log">
+		      		<div class="row">
+						<table class="table">
+							<tr>
+								<div class="well left">
+									<b>: </b>Well that's good, glad it got worked out.
+								</div>
+							</tr>
+							<br>
+							<tr>
+								<div class="well right">
+									<b></b>Yea, it's good that it got solved.
+								</div>
+							</tr>
+							<tr>
+								<div class="well right">
+									<b></b>Hopefully it won't have to happen again lol. How is the product
+											development coming along?
+								</div>
+							</tr>
+							<tr>
+								<div class="well left">
+									<b>: </b>Good for now, it's steady but difficult. We're about halfway done with it!
+								</div>
+							</tr>
+							<tr>
+								<div class="well left">
+									<b>: </b>The next project will be fun though, it's with C++.
+								</div>
+							</tr>
+							<tr>
+								<div class="well right">
+									<b></b>Nice, that's the best. Have fun with that.
+								</div>
+							</tr>
+							<tr>
+								<div class="well right">
+									<b></b>I'll see you later on today!
+								</div>
+							</tr>
+						</table>
+					</div>
+		      	</div>
+
+		      	<div class="panel-footer">
+		      		<div class = "chat_text">
+						<form class="form-inline">
+						    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="">
+						  	<button type="submit" class="btn btn-default">Send</button>
+						</form>
+		      		</div>
+		      	</div>
 		    </div>
 		</div>
 
-		
+		<!--
 		<div class="col-md-6">
 			<div class="panel panel-default two_panels_right">
 		       <div class="panel-heading">Panel with panel-primary class</div>
