@@ -95,7 +95,7 @@ INSERT INTO Chat (chat_UserOne, chat_UserTwo, chat_Message) VALUES
 ('quesadar@dukes.jmu.edu', 'stJohn@yahoo.com', 'Hello World!'),
 ('stJohn@yahoo.com', 'quesadar@dukes.jmu.edu', 'Goodbye World!');
 INSERT INTO Event (event_EventName, event_Begins, event_Ends, event_Description) VALUES 
-('Old Event', '2015-03-02', NULL, 'This WAS an Event!')
+('Old Event', '2015-03-02', NULL, 'This WAS an Event!'),
 ('Event 1', '2016-04-03', NULL, 'This is a great Event!'),
 ('Event 2', '2016-04-05', NULL, 'This is a better Event!');
 INSERT INTO UserAndEvent (user_EmailAddress, event_EventID) VALUES
