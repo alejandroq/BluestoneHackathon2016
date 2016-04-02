@@ -10,24 +10,26 @@ function login()
 			$password = $_POST['password'];
 
 			$sql = "SELECT * FROM User LEFT JOIN Position ON user_PositionID = pos_PositionID LEFT JOIN Organization ON user_OrgID = org_OrgID WHERE user_EmailAddress = '$email' AND user_Password = '$password'";
-			print_r($sql);
 			$result = $mysqli->query($sql);
-			print_r($result->num_rows);
 			if ($result->num_rows > 0) {
 				$loggedIn = 1;
-				$_SESSION['email'] = $email;
-				while ($row = mysql_fetch_assoc($result)) {
-					$role = $row['pos_PositionTitle'];
-					$_SESSION['$pos_PositionTitle'];
-					$_SESSION['$org_Name'];
+				while ($rows = $result->fetch_assoc()) {
+					$_SESSION['email'] = $email;
+					$_SESSION['pos_PositionTitle'] = $rows['pos_PositionTitle'];
+					$_SESSION['user_FirstName'] = $rows['user_FirstName'];
+					$_SESSION['org_Name'] = $rows['org_Name'];
+
 					print_r($_SESSION);
 				}
+				echo '<script>
+						window.location = "index.php";
+					</script>';
 			} else {
-					echo '<div class="alert alert-danger">Invalid Login Credentials</div>'; 
+					echo '<div class="alert alert-danger">Invalid Login Credentials</div>';
+					session_destroy();
 				}	
 		} 
 	}
 }
-
 	
 ?>
