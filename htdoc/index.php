@@ -7,19 +7,32 @@
 		<!-- FIRST TWO FUCNCTIONS -->
 		<div class = "content">
 		<div class="row">
-		  <div class="col-md-6">
-		<div class="panel panel-default calendar">
-		      <div class="panel-body">
-		      <div id = 'calendar'></div>
-		      </div>
+		<div class="col-md-6" id = "calendar_view">
+			<div class="panel panel-default calendar">
+			    <div class="panel-heading">
+				    <div class = "notepad_title">
+				    	&nbsp;
+				    	<div class = "close" id = "calendar_close">
+				    		x
+				    	</div>
+				    </div>
+				</div>
+		      	<div class="panel-body">
+		      		<div id = 'calendar'></div>
+		      	</div>
 		    </div>
 		</div>
 
-	<div class="col-md-6">
+	<div class="col-md-6" id = "notepad_view">
 			<div class="panel panel-default notepad">
 			    <div class="panel-heading">
-			    <div class = "notepad_title">Notepad</div>
-			</div>
+				    <div class = "notepad_title">
+				    	Notepad
+				    	<div class = "close" id = "notepad_close">
+				    		x
+				    	</div>
+				    </div>
+				</div>
 		<div class="panel-body notepad_notes">
 			<div class="row">
 				<table class="table table-hover">
@@ -61,10 +74,15 @@
 
 		<!-- SECOND TWO FUCNCTIONS -->
 
-		<div class="col-md-6">
+		<div class="col-md-6" id = "reminder_view">
 			<div class="panel panel-default reminder">
 		      	<div class="panel-heading">
-		      		<div class = "reminder_title">Reminders</div>
+		      		<div class = "reminder_title">
+		      			Reminders
+		      			<div class = "close" id = "reminder_close">
+			    		x
+			    		</div>
+		      		</div>
 		      	</div>
 		      	<div class="panel-body reminder_reminders">
 		      		<div class="row">
@@ -95,11 +113,11 @@
 							</tr>
 						</table>
 					</div>
-		      </div>
+		      	</div>
 		    </div>
-		  </div>
+		</div>
 
-		<div class="col-md-6">
+		<div class="col-md-6" id = "file_manager_view">
 			<div class="panel panel-default file_manager">
 		    	<div class="panel-heading">
 		    		<div class = "file_manager_title">
@@ -130,6 +148,9 @@
 		    				</div>
 
 		    				<div class="col-md-2">
+								<div class = "close" id = "file_close">
+			    					x
+			    				</div>
 		    					<!--
 		    						<input type="text" class="form-control" id="searchBar" placeholder=" Search">
 		    					-->
@@ -175,6 +196,7 @@
 							<p>index.java</p>
 						</div>
 		      		</div>
+
 		      		<div class="row">
 						<div class="col-md-3">
 							<span class="glyphicon glyphicon-file" aria-hidden="true"></span>
@@ -192,27 +214,32 @@
 		<!-- END SECOND TWO FUNCTIONS -->
 
 		<!-- THIRD TWO FUCNCTIONS -->
-		  <div class="col-md-6">
-		<div class="panel panel-default two_panels_right">
-		      <div class="panel-heading">Panel with panel-primary class</div>
-		      <h6>
-		      fsd fsad f gs fgdsa fdsa fdsa fdsa fdsa f f g gsa dsadsad
-		      fdsf fdsa bfd gh res 
-		      </h6>
-		      <div class="panel-body">Panel Content</div>
+		<!--
+		<div class="col-md-6" id = "chat_view">
+			<div class="panel panel-default chat">
+		    	<div class="panel-heading">
+		    		<div class = "chat_title">
+		    			Chat
+		    		</div>
+		    		<div class = "close" id = "reminder_close">
+			    		x
+			    	</div>
+		      	<div class="panel-body">Panel Content</div>
 		    </div>
-		  </div>
+		</div>
 
-		  <div class="col-md-6">
-		<div class="panel panel-default two_panels_right">
-		      <div class="panel-heading">Panel with panel-primary class</div>
-		      <div class="panel-body">Panel Content</div>
-		    </div>
-		  </div>
+		
+		<div class="col-md-6">
+			<div class="panel panel-default two_panels_right">
+		       <div class="panel-heading">Panel with panel-primary class</div>
+		       <div class="panel-body">Panel Content</div>
+		     </div>
+		</div>
+		-->
 
 		<!-- END THIRD TWO FUNCTIONS -->
 		</div>
-		</div>
+	</div>
 		<!-- END BODY -->
 	</article>
 
