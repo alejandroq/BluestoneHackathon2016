@@ -28,7 +28,6 @@
 	    <!-- JAVASCRIPT -->
 	    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 	    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	    <!-- END JAVASCRIPT -->
 	</head>
 	<body>
