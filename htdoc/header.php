@@ -27,14 +27,13 @@
 	    <!-- END JAVASCRIPT -->
 	</head>
 	<body>
-	<?php include '../connection.php' ?>
 		<!-- HEADER -->
-		<header class="container-fluid">
-			<h1 id="branding_logo" class="fa fa-coffee col-md-6 logo">&nbsp;Coffee</h1>
-			<nav>
-				<li><i class="fa fa-home"><p>Home</p></i></li>
-				<li><i class="fa fa-envelope-o"><p>Email</p></i></li>
-				<li><i class="fa fa-cog"><p>Settings</p></i></li>
-			</nav>
+		<header class="container-fluid nav_buttons">
+				<h1 id="branding_logo" class="fa fa-coffee col-md-6 logo">&nbsp;Coffee</h1>
+				<nav>
+					<li><a class="fa fa-home" href="index.php"><p>Home</p></a></li>
+					<li><a class="fa fa-envelope-o" href="email.php"><p>Email</p></a></li>
+					<li><a class="fa fa-cog" href="settings.php"><p>Settings</p></a></li>
+				</nav>
 		</header>
 		<!-- END HEADER -->
