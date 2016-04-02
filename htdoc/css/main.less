@@ -24,8 +24,10 @@ fieldset,hr{border:0;padding:0}html{color:#222;font-size:1em;line-height:1.4}::-
 /* ==========================================================================
    Author's custom style
    ========================================================================== */
+
 body {
   background-color: @backgroundColor !important;
+  overflow-x: hidden;
 }
 header, footer {
   background-color:@headerColor;
@@ -35,6 +37,21 @@ article {
   padding:1em 2em;
 }
 .two_panels_left, .two_panels_right{
+}
+
+.file_manager{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.file_manager_title{
+  width:100%;
+}
+.file_icons p{
+  font-size:.7em;
+}
+.file_manager_files{
+  margin-top: 15px;
+  text-align: center;
 }
 .calendar{
   margin-left: 2%;
@@ -48,11 +65,14 @@ article {
   overflow: scroll;
   overflow-x: hidden;
 }
+#SearchBar{
+  height: 5em;
+}
 .notepade_add{
   text-align: right;
 }
 .notepad_notes{
-  margin-top: 15px;
+  margin-top: -15px;
 }
 .notepad_title{
   text-align: center;
@@ -71,7 +91,6 @@ article {
 
 .reminder_reminders{
   margin-top:-15px;
-
 }
 .two_panels_right{
   margin-left: 2%;
@@ -118,6 +137,12 @@ nav {
   }
 }
 
+/* Glyphs
+*/
+
+span.glyphicon-folder-close, span.glyphicon-file{
+    font-size: 2em;
+}
 /* ==========================================================================
    jQuery UI Helper classes
    ========================================================================== */
