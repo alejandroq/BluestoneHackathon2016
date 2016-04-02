@@ -1,71 +1,238 @@
-$(document).ready(function() {
+//variables 
+@headerColor:#cccccc;
+@backgroundColor: #F5F5F5;
 
-    $('#calendar').fullCalendar({
-        // put your options and callbacks here
-    })
+//mixins
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
 
-    /* Set all views to 'none' */
-    $('#notepad_view').css({
-        'display': 'none'
-    });
-    $('#calendar_view').css({
-        'display': 'none'
-    });
-    $('#reminder_view').css({
-        'display': 'none'
-    });
-    $('#file_manager_view').css({
-        'display': 'none'
-    });
-});
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
 
-/* Close and open of notepad */
-$('#notepad_close').click(function() {
-    $('#notepad_view').css({
-        'display': 'none'
-    });
-});
-$('#notepad_open').click(function() {
-    $('#notepad_view').css({
-        'display': 'block'
-    });
-});
+/* ==========================================================================
+   HTML 5 Boilerplate CSS
+   ========================================================================== */
+fieldset,hr{border:0;padding:0}html{color:#222;font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border-top:1px solid #ccc;margin:1em 0}audio,canvas,iframe,img,svg,video{vertical-align:middle}fieldset{margin:0}textarea{resize:vertical}.browserupgrade{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
 
-/* Close and open of calendar */
-$('#calendar_close').click(function() {
-    $('#calendar_view').css({
-        'display': 'none'
-    });
-});
-$('#calendar_open').click(function() {
-    $('#calendar_view').css({
-        'display': 'block'
-    });
-});
 
-/* Close and open of reminder */
-$('#reminder_close').click(function() {
-    $('#reminder_view').css({
-        'display': 'none'
-    });
-});
-$('#reminder_open').click(function() {
-    $('#reminder_view').css({
-        'display': 'block'
-    });
-});
+/* ==========================================================================
+   Author's custom style
+   ========================================================================== */
 
-/* Close and open of file mang. */
-$('#file_close').click(function() {
-    $('#file_manager_view').css({
-        'display': 'none'
-    });
-});
-$('#file_open').click(function() {
-    $('#file_manager_view').css({
-        'display': 'block'
-    });
-});
-$('#settings').click(function() {
-	$('#list_view').toggle().empty().append('<a href="logout.php"><li>Logout</li></a>');
-});
+a{
+  text-decoration: none !important;
+  color: inherit !important;
+}
+.container {
+  width: 20em !important;
+  padding: 2em;
+  border-radius: .5em;
+  margin: 1em auto 4em;
+}
+#list_view {
+  display: none;
+  padding:1em;
+  position: relative;
+  z-index: 10000;
+  text-indent: 1em;
+  width: 20em;
+  font-size: 1.5em;
+  @media (max-width:600px){
+    width: 100%;
+    text-align: center;
+  }
+  background-color: @headerColor;
+  list-style-type: none;
+  float: right;
+  .transition(all 2s);
+  li {
+    padding: 1em;
+    &:hover {
+      cursor: pointer;
+      background-color: @backgroundColor;
+      color: #666666;
+    }
+  }
+}
+body {
+  background-color: @backgroundColor !important;
+  height:102%;
+  overflow-x: hidden;
+
+  padding-bottom:4em;
+}
+header{
+  background-color:@headerColor;
+  padding: 1em;
+}
+article {
+  padding:1em 2em;
+}
+.two_panels_left, .two_panels_right{
+}
+
+.file_manager{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.file_manager_title{
+  width:100%;
+}
+.file_icons p{
+  font-size:.7em;
+}
+.file_manager_files{
+  margin-top: 15px;
+  text-align: center;
+}
+.calendar{
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+}
+.notepad{
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 15em;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+#SearchBar{
+  height: 5em;
+}
+.notepade_add{
+  text-align: right;
+}
+.notepad_notes{
+  margin-top: -15px;
+}
+.notepad_title{
+  text-align: center;
+}
+.reminder{
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 15em;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.chat{
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 30em;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.chat_title{
+  text-align: center;
+}
+
+.chat_log{
+  margin-top:-15px;
+}
+.chat_text{
+  text-align: center;
+}
+.reminder_title{
+  text-align: center;
+}
+
+.reminder_reminders{
+  margin-top:-15px;
+}
+.two_panels_right{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+#branding_logo {
+  font-size: 2.3em;
+  @media (max-width:600px){
+    width: 100%;
+    text-align: center;
+  }
+}
+nav {
+  padding: 1em;
+  float: right !important;
+  font-size: 1.5em;
+  display: inline !important;
+  @media (max-width:600px){
+    font-size: 2em;
+    display: block;
+    margin: 0em auto;
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+  }
+  p {
+    margin: 0em .75em 0em .25em;
+    display: inline;
+    @media (max-width:600px){
+      display: none;
+    }
+  }
+  i {
+    @media (max-width:600px){
+      margin: .5em;
+    }
+  }
+  li {
+    display: inline;
+    &:hover{
+      cursor: pointer;
+      color: #666666;
+    }
+  }
+}
+span.glyphicon-folder-close, span.glyphicon-file{
+    font-size: 2em;
+}
+
+footer{
+  font-size:.6em;
+  color: black !important;
+}
+
+.work_status_bar{
+  float:left;
+}
+.function_menu{
+  float:right;
+}
+
+#upper_nav{
+  height: 20% !important;
+}
+
+.left, .right{
+  width: 50%;
+}
+
+.left{
+  float: left;
+  margin-left: 1em;
+  background-color: #80bfff !important;
+}
+
+.right{
+  float: right;
+  margin-right: 1em;
+}
+
+/* ==========================================================================
+   jQuery UI Helper classes
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden,.invisible{visibility:hidden}.hidden{display:none!important}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}
