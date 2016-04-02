@@ -111,6 +111,7 @@ SELECT * FROM Chat;
 SELECT * FROM Event;
 SELECT * FROM UserAndEvent;
 SELECT * FROM Organization; 
+SELECT * FROM Note;
 SELECT * FROM Organization LEFT JOIN User ON user_OrgID = org_OrgID;
 SELECT * FROM Event WHERE event_Begins >= CURDATE() ORDER BY event_Begins ASC;
 SELECT * FROM Event ORDER BY event_Begins ASC;

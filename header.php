@@ -12,10 +12,6 @@
 	    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 	    <!-- END FAVICON -->
 
-	    <!-- RALEWAY FONT -->
-	    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"/>
-	    <!-- END RALEWAY FONT -->
-
 	   	<!-- STYLESHEETS -->
 	    <link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
 	    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
@@ -32,7 +28,12 @@
 	</head>
 	<body>
 		<!-- HEADER -->
-		<header>
-			<h1>Hello World!</h1>
+		<header class="container-fluid">
+			<h1 id="branding_logo" class="fa fa-coffee col-md-6 logo">&nbsp;Coffee</h1>
+			<nav>
+				<li><i class="fa fa-home"><p>Home</p></i></li>
+				<li><i class="fa fa-envelope-o"><p>Email</p></i></li>
+				<li><i class="fa fa-cog"><p>Settings</p></i></li>
+			</nav>
 		</header>
 		<!-- END HEADER -->
