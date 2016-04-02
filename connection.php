@@ -1,6 +1,6 @@
 <?php 
-$mysql_server = "127.0.0.1"; 
-$mysql_user = "root"; 
+$mysql_server = "52.36.216.197/"; 
+$mysql_user = "user"; 
 $mysql_password = "1234"; 
 $mysql_db = "db"; 
 $mysqli = new mysqli($mysql_server, $mysql_user, $mysql_password, $mysql_db); 

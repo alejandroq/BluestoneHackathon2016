@@ -27,6 +27,7 @@
 	    <!-- END JAVASCRIPT -->
 	</head>
 	<body>
+	<?php include '../connection.php' ?>
 		<!-- HEADER -->
 		<header class="container-fluid">
 			<h1 id="branding_logo" class="fa fa-coffee col-md-6 logo">&nbsp;Coffee</h1>
