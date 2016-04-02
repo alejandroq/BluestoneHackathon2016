@@ -11,15 +11,18 @@ $(document).ready(function() {
     // $('#calendar_view').css({
     //     'display': 'none'
     // });
-    // $('#reminder_view').css({
-    //     'display': 'none'
-    // });
-    // $('#file_manager_view').css({
-    //     'display': 'none'
-    // });
-    // $('#chat_view').css({
-    //     'display': 'none'
-    // });
+    $('#reminder_view').css({
+        'display': 'none'
+    });
+    $('#file_manager_view').css({
+        'display': 'none'
+    });
+    $('#admin_view').css({
+        'display': 'none'
+    });
+    $('#chat_view').css({
+        'display': 'none'
+    });
 });
 
 /* Close and open of notepad */
@@ -88,6 +91,18 @@ $('#chat_open').click(function() {
     });
 });
 
+/* Close and open of file mang. */
+$('#admin_close').click(function() {
+    $('#admin_view').css({
+        'display': 'none'
+    });
+});
+$('#admin_open').click(function() {
+    $('#admin_view').css({
+        'display': 'block'
+    });
+});
+
 function grabNewEvents() {
 
     event.preventDefault(); //Hijack event from PHP to refrain page reload. 
@@ -106,4 +121,3 @@ function grabNewEvents() {
     //PERFORM REQUEST
   $.ajax(options);
 } //END OF FORM SUBMISSION
-
