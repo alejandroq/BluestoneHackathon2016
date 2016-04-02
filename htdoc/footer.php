@@ -1,6 +1,6 @@
 		<!-- FOOTER -->
 	    <footer>
-			<nav class="navbar navbar-default navbar-fixed-bottom">
+			<nav class="navbar navbar-default navbar-fixed-bottom bot_bar">
 	    		<div class = "row footer_bar">
 	    			<div class="col-md-3">
 						<div class="btn-group dropup function_menu">
@@ -27,6 +27,10 @@
 										<td>File Manager</td>
 										<td>   </td>
 									</tr>
+									<tr id = "admin_open">
+										<td>Admin</td>
+										<td>   </td>
+									</tr>
 								</table>
 						  	</ul>
 						</div>
@@ -48,62 +52,64 @@
 						    	<span class="sr-only">Toggle Dropdown</span>
 						  	</button>
 						  	<ul class="dropdown-menu">
-								<table class="table table-hover">
-									<tr>
-										<td>J. Smith</td>
-										<td>   
-											<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
-										</td>
-									</tr>
-									<tr>
-										<td>T Karren.</td>
-										<td>   
-											<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
-										</td>
-									</tr>
-									<tr>
-										<td>B. Paul</td>
-										<td>  
-											<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> 
-										</td>
-									</tr>
-									<tr>
-										<td>W. Wallis</td>
-										<td>  
-											<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
-										</td>
-									</tr>
-									<tr>
-										<td>M. Lloyd</td>
-										<td>   
-											<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
-										</td>
-									</tr>
-									<tr>
-										<td>P. Low</td>
-										<td>   
-											<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
-										</td>
-									</tr>
-									<tr>
-										<td>F. Peer</td>
-										<td>   
-											<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
-										</td>
-									</tr>
-									<tr>
-										<td>K. Yols</td>
-										<td>   
-											<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
-										</td>
-									</tr>
-									<tr>
-										<td>R. Loke</td>
-										<td>   
-											<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
-										</td>
-									</tr>
-								</table>
+						  		<div id = "chat_open">
+									<table class="table table-hover">
+										<tr>
+											<td>J. Smith</td>
+											<td>   
+												<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>T Karren.</td>
+											<td>   
+												<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>B. Paul</td>
+											<td>  
+												<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> 
+											</td>
+										</tr>
+										<tr>
+											<td>W. Wallis</td>
+											<td>  
+												<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>M. Lloyd</td>
+											<td>   
+												<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>P. Low</td>
+											<td>   
+												<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>F. Peer</td>
+											<td>   
+												<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>K. Yols</td>
+											<td>   
+												<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>R. Loke</td>
+											<td>   
+												<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+											</td>
+										</tr>
+									</table>
+								</div>
 						  	</ul>
 						</div>
 	    			</div>
