@@ -66,3 +66,6 @@ $('#file_open').click(function() {
         'display': 'block'
     });
 });
+$('#settings').click(function() {
+	$('#list_view').toggle().empty().append('<a href="logout.php"><li>Logout</li></a>');
+});
