@@ -280,6 +280,167 @@
 		    </div>
 		</div>
 
+
+		<div class="col-md-6" id = "admin_view">
+			<div class="panel panel-default admin">
+		      	<div class="panel-heading">
+		      		<div class = "admin_title">
+		      			Administration
+		      			<div class = "close" id = "admin_close">
+			    		x
+			    		</div>
+		      		</div>
+		      	</div>
+		      	<div class="panel-body">
+					<ul class="nav nav-tabs nav-justified">
+					  <li role="presentation" class="active"><a href="#">Users</a></li>
+					  <li role="presentation"><a href="#">Employees</a></li>
+					  <li role="presentation"><a href="#">Panels</a></li>
+					</ul>
+
+					<table class="table table-striped admin_table">
+						<tr>
+							<td>
+								<b>Name</b>
+							</td>
+							<td>
+								<b>Manager</b>
+							</td>
+							<td>
+								<b>Position</b>
+							</td>
+							<td>
+				
+							</td>
+						</tr>
+						
+
+						<tr>
+							<td>
+								John Smith
+							</td>
+							<td>
+								J. Scott
+							</td>
+							<td>
+								Sales Rep.
+							</td>
+							<td>
+								<b>Edit</b>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								Rick Owen
+							</td>
+							<td>
+								J. Scott
+							</td>
+							<td>
+								Developer
+							</td>
+							<td>
+								<b>Edit</b>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								Ken Tott
+							</td>
+							<td>
+								P. Owes
+							</td>
+							<td>
+								HR
+							</td>
+							<td>
+								<b>Edit</b>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								Walter Pole
+							</td>
+							<td>
+								L. Davis
+							</td>
+							<td>
+								Marketing
+							</td>
+							<td>
+								<b>Edit</b>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								Paul Kim
+							</td>
+							<td>
+								Y. Man
+							</td>
+							<td>
+								Sales Rep.
+							</td>
+							<td>
+								<b>Edit</b>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								Ken Tott
+							</td>
+							<td>
+								P. Owes
+							</td>
+							<td>
+								HR
+							</td>
+							<td>
+								<b>Edit</b>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								Walter Pole
+							</td>
+							<td>
+								L. Davis
+							</td>
+							<td>
+								Marketing
+							</td>
+							<td>
+								<b>Edit</b>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								Paul Kim
+							</td>
+							<td>
+								Y. Man
+							</td>
+							<td>
+								Sales Rep.
+							</td>
+							<td>
+								<b>Edit</b>
+							</td>
+						</tr>
+					</table>
+		      	</div>
+
+		      </div>
+
+		    </div>
+		</div>
 		<!--
 		<div class="col-md-6">
 			<div class="panel panel-default two_panels_right">
