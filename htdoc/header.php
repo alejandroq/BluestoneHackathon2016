@@ -44,7 +44,8 @@ session_start();
 				<nav>
 					<li><a class="fa fa-home" href="index.php"><p>Home</p></a></li>
 					<li><a class="fa fa-envelope-o" href="email.php"><p>Email</p></a></li>
-					<li><a class="fa fa-cog" href="settings.php"><p>Settings</p></a></li>
+					<li id="settings"><i class="fa fa-cog"><p>Settings</p></a></li>
 				</nav>
+		<div id="list_view"></div>
 		</header>
 		<!-- END HEADER -->
