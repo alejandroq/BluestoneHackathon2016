@@ -138,7 +138,7 @@
 		    		</div>
 		    	</div>
 
-		      	<div class="panel-body file_manager_files">
+		      	<div class="panel-body file_manager_files file_icons">
 		      		<div class="row">
 						<div class="col-md-3">
 							<span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span>
