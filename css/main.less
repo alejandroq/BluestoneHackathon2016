@@ -1,5 +1,6 @@
 //variables 
 @headerColor:#cccccc;
+@backgroundColor: #F5F5F5;
 
 //mixins
 .transition(@transition) {
@@ -15,25 +16,23 @@
 }
 
 /* ==========================================================================
-   HTML 5 Boilderplate CSS
+   HTML 5 Boilerplate CSS
    ========================================================================== */
-/*
 fieldset,hr{border:0;padding:0}html{color:#222;font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border-top:1px solid #ccc;margin:1em 0}audio,canvas,iframe,img,svg,video{vertical-align:middle}fieldset{margin:0}textarea{resize:vertical}.browserupgrade{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
 
 
 /* ==========================================================================
    Author's custom style
    ========================================================================== */
+body {
+  background-color: @backgroundColor !important;
+}
 header, footer {
   background-color:@headerColor;
   padding: 1em;
 }
 article {
   padding:1em 2em;
-}
-.content{
-  background-color: #F5F5F5;
-  padding-top:2%;
 }
 .two_panels_left, .two_panels_right{
 }

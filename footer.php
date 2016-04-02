@@ -1,6 +1,6 @@
 		<!-- FOOTER -->
 	    <footer>
-	    	<div class="row" style="text-align: center; color:gray;"><p>Website & Content &copy; 2016 Bluestone Hackathon</p></div>
+	    	<div class="row" style="text-align: center; color:gray;"><p>Website & Content &copy; 2016 Folger People</p></div>
 	    </footer>
 	    <!-- END FOOTER -->
 
