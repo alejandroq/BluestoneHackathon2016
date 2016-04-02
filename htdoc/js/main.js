@@ -5,21 +5,21 @@ $(document).ready(function() {
     })
 
     /* Set all views to 'none' */
-    $('#notepad_view').css({
-        'display': 'none'
-    });
-    $('#calendar_view').css({
-        'display': 'none'
-    });
-    $('#reminder_view').css({
-        'display': 'none'
-    });
-    $('#file_manager_view').css({
-        'display': 'none'
-    });
-    $('#chat_view').css({
-        'display': 'none'
-    });
+    // $('#notepad_view').css({
+    //     'display': 'none'
+    // });
+    // $('#calendar_view').css({
+    //     'display': 'none'
+    // });
+    // $('#reminder_view').css({
+    //     'display': 'none'
+    // });
+    // $('#file_manager_view').css({
+    //     'display': 'none'
+    // });
+    // $('#chat_view').css({
+    //     'display': 'none'
+    // });
 });
 
 /* Close and open of notepad */
@@ -73,6 +73,9 @@ $('#settings').click(function() {
 	$('#list_view').toggle().empty().append('<a href="logout.php"><li>Logout</li></a>');
 });
 
+$('#events').click(function() {
+	$('#list_view').toggle();
+});
 /* Close and open of file mang. */
 $('#chat_close').click(function() {
     $('#chat_view').css({
@@ -84,3 +87,23 @@ $('#chat_open').click(function() {
         'display': 'block'
     });
 });
+
+function grabNewEvents() {
+
+    event.preventDefault(); //Hijack event from PHP to refrain page reload. 
+
+    var options = new Object();
+    options.dataType = 'text';
+    options.type = 'get';
+    options.success = function(response) {
+    //if AJAX Request is a success
+
+    $('#list_view').empty().append(response)
+
+  }; // END OF AJAX SUCCESS
+  options.url = 'events.php';
+
+    //PERFORM REQUEST
+  $.ajax(options);
+} //END OF FORM SUBMISSION
+
