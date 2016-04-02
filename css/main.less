@@ -1,5 +1,6 @@
 //variables 
 @headerColor:#cccccc;
+
 //mixins
 .transition(@transition) {
   -webkit-transition: @transition;
@@ -29,6 +30,53 @@ header, footer {
 }
 article {
   padding:1em 2em;
+}
+.content{
+  background-color: #F5F5F5;
+  padding-top:2%;
+}
+.two_panels_left, .two_panels_right{
+}
+.calendar{
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+}
+.notepad{
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 15em;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.notepade_add{
+  text-align: right;
+}
+.notepad_notes{
+  margin-top: 15px;
+}
+.notepad_title{
+  text-align: center;
+}
+.reminder{
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 15em;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.reminder_title{
+  text-align: center;
+}
+
+.reminder_reminders{
+  margin-top:-15px;
+
+}
+.two_panels_right{
+  margin-left: 2%;
+  margin-right: 2%;
 }
 #branding_logo {
   font-size: 3em;

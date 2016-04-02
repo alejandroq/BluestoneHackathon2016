@@ -14,6 +14,16 @@
 			<script src="js/main.js"></script>
 			<!-- BOOTSTRAP -->
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<!-- END SCRIPTS -->
+			<!-- END BOOTSTRAP -->
+			<!-- MOMENT -->
+   			<script src="js/moment.js"></script>
+   			<!-- END MOMENT -->
+   			<!-- CALENDAR -->
+			<link rel='stylesheet' href='css/calendar/fullcalendar.css' />
+			<script src='css/calendar/lib/jquery.min.js'></script>
+			<script src='css/calendar/lib/moment.min.js'></script>
+			<script src='css/calendar/fullcalendar.js'></script>
+			<!-- END CALENDAR -->
+			<!-- END SCRIPTS -->
 	</body>
 </html>
