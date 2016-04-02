@@ -70,7 +70,7 @@ $('#file_open').click(function() {
     });
 });
 $('#settings').click(function() {
-	$('#list_view').toggle().empty().append('<a href="logout.php"><li>Logout</li></a>');
+	$('#list_view').toggle().empty().append('<a href="logout.php"><li><i class="fa fa-sign-out"></i>&nbsp;Logout</li></a>');
 });
 
 $('#events').click(function() {
