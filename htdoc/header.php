@@ -42,10 +42,11 @@ session_start();
 				?>
 				</h1>
 				<nav>
-					<li><a class="fa fa-home" href="index.php"><p>Home</p></a></li>
-					<li><a class="fa fa-envelope-o" href="email.php"><p>Email</p></a></li>
-					<li id="settings"><i class="fa fa-cog"><p>Settings</p></a></li>
+					<li><a href="index.php"><i class="fa fa-home"><p>Home</p></a></i></li>
+					<li><a href="email.php"><i class="fa fa-envelope-o"><p>Email</p></i></a></li>
+					<li id="events"><i class="fa fa-calendar"><p>Events</p></i></li>
+					<li id="settings"><i class="fa fa-cog"><p>Settings</p></i></li>
 				</nav>
-		<div id="list_view"></div>
 		</header>
+		<div id="list_view"></div>
 		<!-- END HEADER -->
